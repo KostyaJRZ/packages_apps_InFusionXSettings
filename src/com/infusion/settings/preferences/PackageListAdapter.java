@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.settings.preferences;
+package com.infusion.settings.preferences;
 
 import android.content.Context;
 import android.content.Intent;

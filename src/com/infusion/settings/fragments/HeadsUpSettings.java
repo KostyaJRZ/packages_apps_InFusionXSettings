@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.settings.fragments;
+package com.infusion.settings.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -38,8 +38,8 @@ import android.widget.ListView;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.nitrogen.settings.preferences.PackageListAdapter;
-import com.nitrogen.settings.preferences.PackageListAdapter.PackageItem;
+import com.infusion.settings.preferences.PackageListAdapter;
+import com.infusion.settings.preferences.PackageListAdapter.PackageItem;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -97,13 +97,13 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.INFUSION_SETTINGS;
     }
 
     @Override
     public int getDialogMetricsCategory(int dialogId) {
         if (dialogId == DIALOG_STOPLIST_APPS || dialogId == DIALOG_BLACKLIST_APPS ) {
-            return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+            return MetricsProto.MetricsEvent.INFUSION_SETTINGS;
         }
         return 0;
     }

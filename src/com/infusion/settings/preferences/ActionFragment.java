@@ -17,7 +17,7 @@
  * class that holds target widget state
  */
 
-package com.nitrogen.settings.preferences;
+package com.infusion.settings.preferences;
 
 import java.util.ArrayList;
 
@@ -28,9 +28,9 @@ import com.android.internal.util.hwkeys.Config;
 import com.android.internal.util.hwkeys.Config.ActionConfig;
 import com.android.internal.util.hwkeys.Config.ButtonConfig;
 
-import com.nitrogen.settings.preferences.ShortcutPickHelper;
-import com.nitrogen.settings.preferences.ActionPreference;
-import com.nitrogen.settings.preferences.CustomActionListAdapter;
+import com.infusion.settings.preferences.ShortcutPickHelper;
+import com.infusion.settings.preferences.ActionPreference;
+import com.infusion.settings.preferences.CustomActionListAdapter;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -165,7 +165,7 @@ public class ActionFragment extends SettingsPreferenceFragment implements
         switch (dialogId) {
             case DIALOG_CATEGORY:
             case DIALOG_CUSTOM_ACTIONS:
-                return MetricsEvent.NITROGEN_SETTINGS;
+                return MetricsEvent.INFUSION_SETTINGS;
             default:
                 return 0;
         }
@@ -256,6 +256,6 @@ public class ActionFragment extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.INFUSION_SETTINGS;
     }
 }

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.settings;
+package com.infusion.settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -30,7 +30,7 @@ import com.nitrogen.settings.preferences.Utils;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class NitrogenSettings extends SettingsPreferenceFragment {
+public class InfusionSettings extends SettingsPreferenceFragment {
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -38,7 +38,7 @@ public class NitrogenSettings extends SettingsPreferenceFragment {
         final String KEY_DEVICE_PART = "device_part";
         final String KEY_DEVICE_PART_PACKAGE_NAME = "org.omnirom.device";
 
-        addPreferencesFromResource(R.xml.nitrogen_settings);
+        addPreferencesFromResource(R.xml.infusion_settings);
 
         // DeviceParts
         if (!Utils.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
@@ -49,7 +49,7 @@ public class NitrogenSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.INFUSION_SETTINGS;
     }
 
     public static void lockCurrentOrientation(Activity activity) {

@@ -1,4 +1,4 @@
-package com.nitrogen.settings.fragments;
+package com.infusion.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -33,7 +33,7 @@ public class MiscSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.nitrogen_settings_misc);
+        addPreferencesFromResource(R.xml.infusion_settings_misc);
 
     }
 
@@ -45,6 +45,6 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.INFUSION_SETTINGS;
     }
 }

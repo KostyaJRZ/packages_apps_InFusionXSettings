@@ -1,4 +1,4 @@
-package com.nitrogen.settings.fragments;
+package com.infusion.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -25,8 +25,8 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.nitrogen.settings.preferences.CustomSeekBarPreference;
-import com.nitrogen.settings.preferences.SystemSettingSwitchPreference;
+import com.infusion.settings.preferences.CustomSeekBarPreference;
+import com.infusion.settings.preferences.SystemSettingSwitchPreference;
 import com.android.settings.Utils;
 import android.util.Log;
 
@@ -46,7 +46,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.nitrogen_settings_statusbar);
+        addPreferencesFromResource(R.xml.infusion_settings_statusbar);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -87,7 +87,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.INFUSION_SETTINGS;
     }
 
 }

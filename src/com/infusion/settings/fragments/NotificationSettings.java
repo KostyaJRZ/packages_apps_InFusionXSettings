@@ -1,4 +1,4 @@
-package com.nitrogen.settings.fragments;
+package com.infusion.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -11,7 +11,7 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.nitrogen.settings.preferences.Utils;
+import com.infusion.settings.preferences.Utils;
 
 public class NotificationSettings extends SettingsPreferenceFragment {
 
@@ -22,7 +22,7 @@ public class NotificationSettings extends SettingsPreferenceFragment {
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.nitrogen_settings_notifications);
+        addPreferencesFromResource(R.xml.infusion_settings_notifications);
 
         PreferenceScreen prefScreen = getPreferenceScreen();
 
@@ -41,6 +41,6 @@ public class NotificationSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.INFUSION_SETTINGS;
     }
 }

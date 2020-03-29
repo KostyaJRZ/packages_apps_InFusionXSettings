@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.nitrogen.settings.fragments;
+package com.infusion.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -40,7 +40,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.nitrogen.settings.preferences.Utils;
+import com.infusion.settings.preferences.Utils;
 
 public class PowerMenuSettings extends SettingsPreferenceFragment
                 implements Preference.OnPreferenceChangeListener {
@@ -59,7 +59,7 @@ public class PowerMenuSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.nitrogen_settings_power);
+        addPreferencesFromResource(R.xml.infusion_settings_power);
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
@@ -111,7 +111,7 @@ public class PowerMenuSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.NITROGEN_SETTINGS;
+        return MetricsProto.MetricsEvent.INFUSION_SETTINGS;
     }
 
 }

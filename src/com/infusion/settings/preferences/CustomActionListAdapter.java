@@ -16,7 +16,7 @@
  * Adapter for displaying custom actions in a list
  */
 
-package com.nitrogen.settings.preferences;
+package com.infusion.settings.preferences;
 
 import java.util.ArrayList;
 import java.util.List;

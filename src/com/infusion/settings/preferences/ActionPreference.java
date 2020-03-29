@@ -18,7 +18,7 @@
  * key is identical to the target ConfigMap tag in ActionConstants 
  */
 
-package com.nitrogen.settings.preferences;
+package com.infusion.settings.preferences;
 
 import java.util.Map;
 
