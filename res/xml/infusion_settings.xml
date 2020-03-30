@@ -97,7 +97,7 @@
                  android:targetPackage="org.omnirom.device"
                  android:targetClass="org.omnirom.device.DeviceSettings"/>
                  
-                 <com.ancient.settings.preferences.SystemSettingSwitchPreference
+                 <com.infusion.settings.preferences.SystemSettingSwitchPreference
             android:key="settings_spacer"
             android:title="@string/enable_oneui"
             android:summary="@string/enable_oneui_summary"
