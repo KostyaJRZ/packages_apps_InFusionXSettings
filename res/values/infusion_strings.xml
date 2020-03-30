@@ -236,4 +236,8 @@
     <string name="enable_oneui">OneUI</string>
     <string name="enable_oneui_summary">Show spacer above settings actionbar for easier use with one hand\nNOTE: restart settings app to see effect</string>
 
+    <!-- QS blur -->
+    <string name="blur_quicksettings">Blur behind quick settings (beta)</string>
+    <string name="blur_quicksettings_subtitle">blurs darkened background behind quick settings</string>    
+
 </resources>
