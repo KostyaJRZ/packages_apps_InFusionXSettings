@@ -18,7 +18,7 @@
     android:title="@string/gestures_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+    <com.infusion.settings.preferences.SystemSettingSwitchPreference
         android:key="torch_long_press_power_gesture"
         android:title="@string/torch_long_press_power_gesture_title"
         android:summary="@string/torch_long_press_power_gesture_desc"
@@ -38,13 +38,13 @@
          android:key="dtts_category"
          android:title="@string/dtts_category_header" >
 
-        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        <com.infusion.settings.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
             android:title="@string/double_tap_to_sleep_title"
             android:summary="@string/double_tap_to_sleep_summary"
             android:defaultValue="true" />
 
-        <com.nitrogen.settings.preferences.SystemSettingSwitchPreference
+        <com.infusion.settings.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
             android:title="@string/double_tap_to_sleep_lockscreen_title"
             android:summary="@string/double_tap_to_sleep_lockscreen_summary"
